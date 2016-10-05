@@ -10,7 +10,9 @@ import {TimelineComponent} from './timeline/timeline.component';
   imports: [BrowserModule],
   declarations: [
     AppComponent,
-    BioComponent
+    BioComponent,
+    ProjectsComponent,
+    TimelineComponent
   ],
   bootstrap: [AppComponent]
 })
