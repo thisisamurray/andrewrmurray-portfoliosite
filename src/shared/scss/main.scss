@@ -1,0 +1,5 @@
+.jumbotron {box-shadow: 0 2px 0 black}
+.list-group-item {
+  cursor: pointer;
+  &.active {background-color: lime;}
+}
