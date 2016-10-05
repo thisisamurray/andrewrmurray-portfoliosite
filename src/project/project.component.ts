@@ -7,8 +7,11 @@ import { ProjectsService } from "../shared/services/projects";
   selector: "project",
   providers: [ProjectsService],
   template: `
+    <button (click)="goBack()">Back</button>
     <h2>Project: {{project.name}}</h2>
-    <h1>READY</h1>
+    <img src="{{project.preview_image}}" />
+    <h1>{{project.name}}</h1>
+    <p>{{project.desc}}</p>
   `,
 })
 
@@ -20,5 +23,8 @@ export class ProjectComponent implements OnInit {
       let uid = params['uid'];
       this.project =this.projectsService.getProject(uid);
     });
+  }
+  goBack(): void {
+    this.location.back();
   }
 }

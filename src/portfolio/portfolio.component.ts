@@ -6,22 +6,21 @@ import { User } from "../shared/models/user";
   styleUrls: ['../shared/scss/main.scss'],
   template: `
     <header>
-      <nav class="navbar navbar-invert">
-        <div class="navbar-header">
-          <a href="/" class="navbar-brand">Andrew R. Murray</a>
+      <nav class="pure-menu pure-menu-horizontal">
+        <div class="navbar-logo pure-menu-heading">
+          <a href="/" class="logo"><img src="./src/shared/img/sitelogo.svg" alt="Andrew R. Murray's Portfolio Site"/></a>
         </div>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item">Projects</li>
+          <li class="pure-menu-item">Experience</li>
+          <li class="pure-menu-item">Contact</li>
+        </ul>
       </nav>
     </header>
-    <div class="row">
+    <div>
       <bio></bio>
       <projects></projects>
       <timeline></timeline>
-      <ul *ngIf="users">
-        <li *ngFor="let user of users" class="list-group-item" (click)="selectUser(user)" [class.active]="user === activeUser">
-          <p>{{user.name}}</p>
-          <p>{{user.username}}</p>
-        </li>
-      </ul>
     </div>
     <footer class="text-center">
       <p>All branding and images representing or affiliated with companies and organizations are full property of those institutions. Some of the work contained on this site, specifically where designated as a "marketing mockup", was created as a demonstration without the direct approval for the company represented and does not reflect the views or values of that company.</p>
@@ -31,29 +30,5 @@ import { User } from "../shared/models/user";
   `
 })
 export class PortfolioComponent {
-  msg = 'hello!';
-  users: User[] = [
-    {
-      id: 234,
-      name: 'hank hill',
-      username: 'propane4eva'
-    },
-    {
-      id: 235,
-      name: 'bobby hill',
-      username: 'alkfaeiun'
-    },
-    {
-      id: 236,
-      name: 'dale gribble',
-      username: 'gunnut'
-    }
-  ];
-  activeUser: User;
-  selectUser(user){
-    this.activeUser = user;
-    console.log(this.activeUser);
-  }
   currentYear = new Date().getFullYear()
-
 }

@@ -1,0 +1,22 @@
+ul.projects-list {
+  li {
+    width: 25%;
+    padding: 25px;
+    display: inline-block;
+    float: left;
+    img {}
+    h2.project-title {}
+    p.project-elevator {}
+    a.project-link {}
+    &:after {
+      content: "";
+      clear:both;
+      display: block;
+    }
+  }
+  &:after {
+    content: "";
+    clear:both;
+    display: block;
+  }
+}

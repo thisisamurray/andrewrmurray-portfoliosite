@@ -1,5 +1,30 @@
-.jumbotron {box-shadow: 0 2px 0 black}
-.list-group-item {
-  cursor: pointer;
-  &.active {background-color: lime;}
+@import 'theme';
+
+nav, footer {
+  background-color: $theme-black;
+  color: #fff;
+  padding: 25px;
+}
+nav {
+  .navbar-logo a.logo img {
+    width: 100%;
+    max-width: 150px;
+  }
+  .navbar-navigation {
+
+  }
+}
+footer {
+  font-size: .8em;
+  text-align: center;
+  p {
+    color: $theme-gray-light;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+  }
+  a {
+    color: $theme-red;
+  }
 }

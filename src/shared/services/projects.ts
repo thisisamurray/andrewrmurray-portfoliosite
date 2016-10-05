@@ -6,8 +6,8 @@ export class ProjectsService {
     cladwell_giftFinder: {
       name: "Men\'s Gift Finder",
       desc: "Tasked with creating a interactive web application to educate and enable women to pair down their total amount of clothing, I aided the Cladwell executive team with outlining objectives, guiding UX, and managed project timelines while developing the front-end interface. Since this was a prototype of a new product concept, the code was developed in mind of restructuring and moving components. The development team turned to using React.js with this project first due it\'s modular nature.",
-      preview_image: null,
-      images: [],
+      preview_image: "./src/shared/img/projects/giftfinder0.png",
+      images: ["./shared/img/projects/giftfinder0.png", "./shared/img/projects/giftfinder1.png", "./shared/img/projects/giftfinder2.png", "./shared/img/projects/giftfinder3.png"],
     },
     cladwell_capsules: {
       name: "Women\'s Clothing Capsule Web Application",
