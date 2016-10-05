@@ -10,7 +10,7 @@ import {ProjectsService} from "../shared/services/projects";
       <li *ngFor="let key of projectKeys">
         <p>{{ allProjects[key].name }}</p>
         <p>{{ allProjects[key].desc }}</p>
-        <button>Learn More</button>
+        <a [routerLink]="['/project', key]" class="button">Learn More {{key}}</a>
       </li>
     </ul>
   `,

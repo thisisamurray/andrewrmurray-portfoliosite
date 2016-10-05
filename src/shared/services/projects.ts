@@ -39,8 +39,11 @@ export class ProjectsService {
       preview_image: null,
       images: [],
     }
-  };
+  }
   getProjects() {
     return this.allProjects;
+  }
+  getProject(UID: any) {
+    return this.allProjects[UID];
   }
 }
