@@ -1,13 +1,25 @@
+@import 'theme';
+
 ul.projects-list {
   li {
     width: 25%;
-    padding: 25px;
+    padding: 25px 25px 0 25px;
     display: inline-block;
     float: left;
-    img {}
+    border: 1px black solid;
+    margin: 5px;
+    img {
+      width: 100%;
+    }
     h2.project-title {}
     p.project-elevator {}
-    a.project-link {}
+    a.project-link {
+      background-color: $theme-black;
+      color: $theme-gray-light;
+      display: block;
+      text-align: center;
+      padding: 0 5px;
+    }
     &:after {
       content: "";
       clear:both;

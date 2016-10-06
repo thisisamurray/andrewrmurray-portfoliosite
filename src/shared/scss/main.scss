@@ -1,17 +1,25 @@
 @import 'theme';
 
-nav, footer {
+header, footer {
   background-color: $theme-black;
   color: #fff;
-  padding: 25px;
+  padding: 0 25px;
+  .content {
+    max-width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 nav {
   .navbar-logo a.logo img {
     width: 100%;
     max-width: 150px;
   }
-  .navbar-navigation {
-
+  ul.pure-menu-list {
+    li {
+      padding: 0 7px;
+    }
   }
 }
 footer {
@@ -19,10 +27,6 @@ footer {
   text-align: center;
   p {
     color: $theme-gray-light;
-    max-width: 800px;
-    padding: 10px;
-    margin: 0 auto;
-    display: block;
   }
   a {
     color: $theme-red;
