@@ -1,24 +1,39 @@
 @import 'theme';
 
 ul.projects-list {
+  display: block;
+  margin: 0 auto;
   li {
-    width: 25%;
-    padding: 25px 25px 0 25px;
+    width: 300px;
+    padding: 0;
     display: inline-block;
     float: left;
-    border: 1px black solid;
-    margin: 5px;
+    border: 1px black dotted;
+    margin: 5px 10px;
     img {
       width: 100%;
     }
-    h2.project-title {}
+    h2.project-title {
+      text-align: center;
+    }
     p.project-elevator {}
+    h2.project-title, p.project-elevator {
+      padding: 0px 25px;
+    }
     a.project-link {
+      margin-top: 10px;
       background-color: $theme-black;
       color: $theme-gray-light;
       display: block;
       text-align: center;
-      padding: 0 5px;
+      padding: 10px 5px;
+      transition: all 0.1s ease;
+      text-decoration: none;
+      font-weight: 500;
+      &:hover {
+        background-color: $theme-red;
+        color: #fff;
+      }
     }
     &:after {
       content: "";
