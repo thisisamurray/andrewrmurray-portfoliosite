@@ -24,7 +24,9 @@ import {Component} from "@angular/core";
 
 export class BioComponent {
   public BioPoints = [
-    {name:"About Me", desc: "From dabbling in online and print work, to running my own business and creating workflows for teams, I have juggled many roles and possess the skills to take on your immediate design and UX needs.", img: null},
+    {name:"About Me", desc: `By wearing multiple hats and providing great team flexibility, I've successfully worked in the fast-paced and chaotic environment of start-up companies for the past 6 years.
+
+    \My roles have always led into providing an ever-evolving design direction, managing teams to improve product and processes, and turning people’s ideas into reality with a strong knowledge of Mobile-First Web Application Development, Javascript Frameworks and Full-Stack Environments.`, img: null},
     {name: "UI/UX", desc: "No matter how complex the functionality or how simple the minds, I will find the perfect way for your users to use your utilities and find usefulness in your usage.", img: "./src/shared/img/workTile2_uiux.svg"},
     {name: "Design", desc: "Over 8 years of constructing emails, developing Facebook Apps, crafting websites, designing brochures, and creating logos has made who I am today.", img: "./src/shared/img/workTile2_design.svg"},
     {name: "Development", desc: "I know HTML5, CSS3, JQuery, PHP, MySQL and a whole bunch of other letter combinations I use to conceptualize your idea and bring it to life.", img: "./src/shared/img/workTile2_develop.svg"},

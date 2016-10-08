@@ -8,15 +8,25 @@ export class ProjectsService {
       ele: "Interactive Angular Web App to recommend Christmas Gifts.",
       desc: "Tasked with creating a interactive web application to educate and enable women to pair down their total amount of clothing, I aided the Cladwell executive team with outlining objectives, guiding UX, and managed project timelines while developing the front-end interface. Since this was a prototype of a new product concept, the code was developed in mind of restructuring and moving components. The development team turned to using React.js with this project first due it\'s modular nature.",
       preview_image: "./src/shared/img/projects/giftfinder0.png",
-      images: ["./shared/img/projects/giftfinder0.png", "./shared/img/projects/giftfinder1.png", "./shared/img/projects/giftfinder2.png", "./shared/img/projects/giftfinder3.png"],
+      images: ["./shared/img/projects/giftfinder1.png", "./shared/img/projects/giftfinder2.png", "./shared/img/projects/giftfinder3.png"],
     },
     cladwell_capsules: {
-      name: "Women\'s Clothing Capsule Web Application",
-      ele: "",
+      name: "Capsules Web App",
+      ele: "React Web App to help women manage their style and clothing.",
       desc: "Tasked with creating a interactive web application to educate and enable women to pair down their total amount of clothing, I aided the Cladwell executive team with outlining objectives, guiding UX, and managed project timelines while developing the front-end interface. Since this was a prototype of a new product concept, the code was developed in mind of restructuring and moving components. The development team turned to using React.js with this project first due it\'s modular nature.",
-      preview_image: null,
+      preview_image: "./src/shared/img/projects/capsules0.png",
+      images: ["./src/shared/img/projects/capsules1.png"],
+    },
+    cladwell_macysIdeaLab: {
+      name: "Macy\'s Idea Lab",
+      ele: "",
+      desc: "I was sent to work with a prototyping team at Macys.com in San Francisco to help them with developing a small web application using Cladwell\'s technology to promote Macy\'s merchandise. Helped onboard the Macys.com team with the specific project objectives and target audience, played a large role in defining the user experience, and facilitated communication between both companies to create an MVP within two weeks. *All designs are property of Macys.com",
+      preview_image: "./src/shared/img/projects/macys0.jpg",
       images: [],
     },
+  }
+  public hiddenProjects = {
+
     cladwell_outfits: {
       name: "Outfits Feature Update - Spring 2016",
       ele: "",
@@ -37,13 +47,6 @@ export class ProjectsService {
       preview_image: null,
       images: [],
     },
-    cladwell_macysIdeaLab: {
-      name: "Macy\'s Idea Lab - Summer 2015",
-      ele: "",
-      desc: "I was sent to work with a prototyping team at Macys.com in San Francisco to help them with developing a small web application using Cladwell\'s technology to promote Macy\'s merchandise. Helped onboard the Macys.com team with the specific project objectives and target audience, played a large role in defining the user experience, and facilitated communication between both companies to create an MVP within two weeks. *All designs are property of Macys.com",
-      preview_image: null,
-      images: [],
-    }
   }
   getProjects() {
     return this.allProjects;
