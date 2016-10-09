@@ -6,7 +6,7 @@ import {ProjectsService} from "../shared/services/projects";
   providers: [ProjectsService],
   styleUrls: ['../shared/scss/projects.scss'],
   template: `
-    <h2>Projects:</h2>
+    <h2 class="section-header">Projects:</h2>
     <ul class="projects-list">
       <li *ngFor="let key of projectKeys">
         <img src="{{allProjects[key].preview_image}}" />

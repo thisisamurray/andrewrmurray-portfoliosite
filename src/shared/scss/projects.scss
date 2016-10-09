@@ -2,21 +2,28 @@
 
 ul.projects-list {
   display: block;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   li {
     width: 300px;
     padding: 0;
     display: inline-block;
-    float: left;
     border: 1px black dotted;
     margin: 5px 10px;
+    min-height: 500px;
     img {
       width: 100%;
     }
     h2.project-title {
       text-align: center;
     }
-    p.project-elevator {}
+    p.project-elevator {
+      min-height: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
+    }
     h2.project-title, p.project-elevator {
       padding: 0px 25px;
     }

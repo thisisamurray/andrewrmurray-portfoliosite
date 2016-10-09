@@ -1,4 +1,6 @@
 @import './FA/font-awesome';
+@import 'theme';
+
 html {
   box-sizing: border-box;
   font-family: "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
@@ -9,4 +11,10 @@ html {
 }
 h1, h2, h3 {
   font-family: 'Crete Round', serif;
+  &.section-header {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+    border-bottom: 1px $theme-black solid;
+  }
 }
