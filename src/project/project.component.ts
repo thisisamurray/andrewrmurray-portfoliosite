@@ -26,9 +26,11 @@ import { ProjectsService } from "../shared/services/projects";
         </div>
         <div class="gallery-container">
           <button class="swiper left" (click)="swipe(SA.LEFT)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-          <div class="gallery_desc">
-            <h3>{{project.images[currentImageIndex].title}}</h3>
-            <p>{{project.images[currentImageIndex].desc}}</p>
+          <div class="gallery-desc">
+            <div class="desc-content">
+              <h3>{{project.images[currentImageIndex].title}}</h3>
+              <p>{{project.images[currentImageIndex].desc}}</p>
+            </div>
           </div>
           <img class="gallery-image" src="{{project.images[currentImageIndex].url}}" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)" />
           <button class="swiper right" (click)="swipe(SA.RIGHT)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>

@@ -12,7 +12,7 @@ import {ProjectsService} from "../shared/services/projects";
         <img src="{{allProjects[key].preview_image}}" />
         <h2 class="project-title">{{ allProjects[key].name }}</h2>
         <p class="project-elevator">{{ allProjects[key].ele }}</p>
-        <a [routerLink]="['/project', key]" class="button project-link">Learn More</a>
+        <a [routerLink]="['/projects', key]" class="button project-link">Learn More</a>
       </li>
     </ul>
   `,

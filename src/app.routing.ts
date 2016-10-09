@@ -10,7 +10,7 @@ const appRoutes: Routes = [
     component: PortfolioComponent,
   },
   {
-    path: 'project/:uid',
+    path: 'projects/:uid',
     component: ProjectComponent,
   }
 ];

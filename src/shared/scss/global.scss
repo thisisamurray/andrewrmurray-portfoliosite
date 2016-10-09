@@ -13,8 +13,8 @@ h1, h2, h3 {
   font-family: 'Crete Round', serif;
   &.section-header {
     max-width: 1000px;
-    margin: 10px auto;
+    margin: 40px auto 10px;
     padding: 10px;
-    border-bottom: 1px $theme-black solid;
+    border-bottom: 3px $theme-red solid;
   }
 }
