@@ -9,10 +9,11 @@ import {ProjectsService} from "../shared/services/projects";
     <h2 class="section-header">Projects:</h2>
     <ul class="projects-list">
       <li *ngFor="let key of projectKeys">
-        <img src="{{allProjects[key].preview_image}}" />
+        <a [routerLink]="['/projects', key]" class="project-link">
+          <img src="{{allProjects[key].preview_image}}" />
+        </a>
         <h2 class="project-title">{{ allProjects[key].name }}</h2>
         <p class="project-elevator">{{ allProjects[key].ele }}</p>
-        <a [routerLink]="['/projects', key]" class="button project-link">Learn More</a>
       </li>
     </ul>
   `,

@@ -14,13 +14,14 @@ import { ProjectsService } from "../shared/services/projects";
         <h2><span class="label">Project:</span> {{project.name}}</h2>
       </div>
       <div class="detail-content">
+        <p><b>Skills:</b> <span *ngFor="let skill of project.skills; let i = index">{{skill}}<span *ngIf="i !== (project.skills.length - 1)">, </span></span></p>
         <p>{{project.desc}}</p>
       </div>
       <div class="detail-gallery">
         <div class="gallery-navigator pure-menu-horizontal">
           <ul class="navigator-buttons pure-menu-list">
-            <li [class.active]="i === currentImageIndex" *ngFor="let imgButton of project.images; let i = index" (click)="updateMainImage(i)" class="pure-menu-item">
-              {{i + 1}}
+            <li [class.active]="i === currentImageIndex" *ngFor="let imgButton of project.images; let i = index" (click)="updateMainImage(i)" class="pure-menu-item img-button">
+              <img src="{{imgButton.url}}" alt="{{i + 1}}" />
             </li>
           </ul>
         </div>

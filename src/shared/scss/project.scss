@@ -76,19 +76,19 @@
       margin-bottom: 25px;
       ul.navigator-buttons{
         li {
-          background-color: black;
-          color: white;
-          border-radius: 100px;
-          padding: 10px;
-          margin: 0 5px;
-          min-width: 40px;
-          height:40px;
+          border: 3px #fff solid;
+          outline: 1px #000 dotted;
+          margin: 10px;
+          max-height: 150px;
+          overflow-y: hidden;
+          img {
+            width:100px;
+          }
           &.active {
-            background-color: $theme-red;
+            outline: 1px $theme-red solid;
           }
           .no-touchevents &:hover {
             cursor: pointer;
-            background-color: $theme-black;
           }
         }
       }
