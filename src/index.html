@@ -10,19 +10,31 @@
     <script src="./node_modules/hammerjs/hammer.min.js"></script>
     <script src="./modernizr.js"></script>
     <style type="text/css">
-      .loading {
-        margin: 0 auto;
+      .loading-box {
+        width: 100%;
         height: 100%;
+        display: table;
         text-align: center;
+        position: absolute;
+        background-color: #302B2B;
+        transition: all .5s ease;
+      }
+      .loading {
+        display: table-cell;
+        vertical-align: middle;
         font-family: 'Crete Round', serif;
         font-size: 2em;
+        color: #fff;
+        text-shadow: 1px 1px 0 #000;
       }
     </style>
   </head>
   <body class="app">
     <app>
-      <div class="loading">
-        Loading
+      <div class="loading-box">
+        <div class="loading">
+          Loading&hellip;
+        </div>
       </div>
     </app>
   </body>
