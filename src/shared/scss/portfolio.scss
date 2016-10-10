@@ -11,6 +11,19 @@ header, footer {
     display: block;
   }
 }
+.skills {
+  text-align: center;
+  margin-bottom: 50px;
+  h2 {
+    text-align: left;
+  }
+  .skill {
+    max-width: 500px;
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+  }
+}
 nav {
   .navbar-logo a.logo img {
     width: 100%;
@@ -25,8 +38,11 @@ nav {
 footer {
   font-size: .8em;
   text-align: center;
+  padding: 25px 10px;
   p {
     color: $theme-gray-light;
+    text-align: left;
+    font-size: .95em;
   }
   a {
     color: $theme-red;

@@ -3,7 +3,7 @@ import { User } from "../shared/models/user";
 
 @Component({
   selector: 'portfolio',
-  styleUrls: ['../shared/scss/main.scss'],
+  styleUrls: ['../shared/scss/portfolio.scss'],
   template: `
     <header>
       <nav class="pure-menu pure-menu-horizontal content">
@@ -24,54 +24,50 @@ import { User } from "../shared/models/user";
       <timeline></timeline>
       <div class="skills">
         <h2 class="section-header">Skills</h2>
-        <div class="pure-g" style="max-width: 1000px;">
-          <div class="skill pure-u-1-2">
-            <h3>Development &amp; Design</h3>
-            <ul>
-              <li>
-                <b>Web Technologies &amp; Software</b>
-                <p>HTML 5, CSS 3, SCSS, Javascript/JQuery, Angular, ReactJS, PHP, MySQL, noSQL MVC Structure, Foundation/Bootstrap, and Mobile Optimization</p>
-              </li>
-              <li>
-                <b>Workflow &amp; Speciality</b>
-                <p>Subversion Control, Facebook App Development, Wordpress, Anchor CMS, Amazon Web Services, Google Webmaster Tools, and Virtualbox VM</p>
-              </li>
-              <li>
-                <b>Analytics &amp; Help Desk</b>
-                <p>Google Analytics, KISSmetrics, Mixpanel, Intercom, Desk.com, Zendesk</p>
-              </li>
-              <li>
-                <b>Design Software &amp; Prototyping</b>
-                <p>Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Balsamiq Mockups, Omnigraffle, Marvelapp.com, and Sketchup</p>
-              </li>
-            </ul>
-          </div>
-          <div class="skill pure-u-1-2">
-            <h3>Product &amp; Process</h3>
-            <ul>
-              <li>
-                <b>Team Workflows</b>
-                <p>Organize team meetings to focus priorities and design step-by-step workflows enabling multiple departments to work together through minimizing mistakes and redundancies.</p>
-              </li>
-              <li>
-                <b>Long-Term Project Planning</b>
-                <p>Established strategy and tactical plans to reach goals, estimate work-hours, and outline development schedules to quickly and efficiently devour tasks.</p>
-              </li>
-              <li>
-                <b>Client Campaign Support</b>
-                <p>Helped clients develop campaign strategies by outlining main goals, aided client asset creation directly or supported through templates to decrease onboarding time and launch preparation.</p>
-              </li>
-              <li>
-                <b>Leading Small Teams</b>
-                <p>Led a team of 5+ designers and front-end developers through projects including implementing client campaigns, app UIs, design and publishing of marketing and sales support materials.</p>
-              </li>
-            </ul>
-          </div>
+        <div class="skill">
+          <h3>Development &amp; Design</h3>
+          <ul>
+            <li>
+              <b>Web Technologies &amp; Software</b>
+              <p>HTML 5, CSS 3, SCSS, Javascript/JQuery, Angular, ReactJS, PHP, MySQL, noSQL MVC Structure, Foundation/Bootstrap, and Mobile Optimization</p>
+            </li>
+            <li>
+              <b>Workflow &amp; Speciality</b>
+              <p>Subversion Control, Facebook App Development, Wordpress, Anchor CMS, Amazon Web Services, Google Webmaster Tools, and Virtualbox VM</p>
+            </li>
+            <li>
+              <b>Analytics &amp; Help Desk</b>
+              <p>Google Analytics, KISSmetrics, Mixpanel, Intercom, Desk.com, Zendesk</p>
+            </li>
+            <li>
+              <b>Design Software &amp; Prototyping</b>
+              <p>Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Balsamiq Mockups, Omnigraffle, Marvelapp.com, and Sketchup</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skill pure-u-1-2">
+          <h3>Product &amp; Process</h3>
+          <ul>
+            <li>
+              <b>Team Workflows</b>
+              <p>Organize team meetings to focus priorities and design step-by-step workflows enabling multiple departments to work together through minimizing mistakes and redundancies.</p>
+            </li>
+            <li>
+              <b>Long-Term Project Planning</b>
+              <p>Established strategy and tactical plans to reach goals, estimate work-hours, and outline development schedules to quickly and efficiently devour tasks.</p>
+            </li>
+            <li>
+              <b>Client Campaign Support</b>
+              <p>Helped clients develop campaign strategies by outlining main goals, aided client asset creation directly or supported through templates to decrease onboarding time and launch preparation.</p>
+            </li>
+            <li>
+              <b>Leading Small Teams</b>
+              <p>Led a team of 5+ designers and front-end developers through projects including implementing client campaigns, app UIs, design and publishing of marketing and sales support materials.</p>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="contact">
-
-      </div>
+      <contact></contact>
     </div>
     <footer>
       <div class="content">
