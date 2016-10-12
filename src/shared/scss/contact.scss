@@ -1,1 +1,46 @@
 @import 'theme';
+.contact {
+  background-color: $theme-gray-light;
+  padding: 25px 0;
+  h2 {
+    text-align: center;
+  }
+  .contact-form > div {
+    max-width: 400px;
+    margin: 10px auto;
+    label {
+      display: block;
+      margin-bottom: 3px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px $theme-black solid;
+    }
+    textarea {
+      height: 100px;
+    }
+    button {
+      background-color: $theme-red;
+      width: 150px;
+      padding: 10px 0;
+      text-align: center;
+      display: block;
+      margin: 10px auto;
+      border: none;
+      border-radius: 5px;
+      font-weight: 300;
+      transition: all .2s ease;
+      &:disabled {
+        background-color: #eee;
+        color: #aaa;
+      }
+    }
+    &.captcha {
+      text-align: center;
+      .captcha-frame {
+        display: inline-block;
+      }
+    }
+  }
+}
