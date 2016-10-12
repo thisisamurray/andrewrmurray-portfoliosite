@@ -9,12 +9,14 @@ export class ProjectsService {
       time: "",
       owner: "Cladwell",
       ele: "Interactive Angular Web App to recommend Christmas Gifts.",
-      desc: "Tasked with creating a interactive web application to educate and enable women to pair down their total amount of clothing, I aided the Cladwell executive team with outlining objectives, guiding UX, and managed project timelines while developing the front-end interface. Since this was a prototype of a new product concept, the code was developed in mind of restructuring and moving components. The development team turned to using React.js with this project first due it\'s modular nature.",
+      desc: `<p>Christmas holiday marketing project in order to provide a free service to recommend fashion items for men based on their body attributes and fashion goals, targeting those who would buy our target audience a present and introduce them to Cladwell’s services.</p>
+      <p>Charged with constructing the entire application, cocreated designs to create an interactive and mobile-friendly web application that ties directly into Cladwell’s APIs within 10 working days.</p>`,
+      highlights: ["CSS-only solution to mimic the Pinterest layout of non-normalized product heights", "Dynamic loading of API response data, allowing the user to tweak their survey inputs to load more accurate product links", "URL encoding of survey data allowed users to share results and bookmark to return to later"],
       preview_image: "./src/shared/img/projects/giftfinder0.png",
       images: [
-        {title: "", desc: "", url: "./src/shared/img/projects/giftfinder1.png"},
-        {title: "", desc: "", url: "./src/shared/img/projects/giftfinder2.png"},
-        {title: "", desc: "", url: "./src/shared/img/projects/giftfinder3.png"}
+        {title: "Prototype", desc: "Tasked with coming up with the interface for the Men's Gift Finder, I created a low fidelity prototype to introduce managament to what needed to be created.", url: "./src/shared/img/projects/giftfinder1.png"},
+        {title: "Survey", desc: "Step 1 of the two step process for creating a Gift List. A user would enter details about the man they are shopping for within this interactive survey in order for Cladwell's algorithms to find the items that would best match.", url: "./src/shared/img/projects/giftfinder2.png"},
+        {title: "Results", desc: "Step 2 displayed preview images and product information to the user based on their previous answers. ", url: "./src/shared/img/projects/giftfinder3.png"}
       ],
     },
     cladwell_capsules: {
@@ -23,7 +25,9 @@ export class ProjectsService {
       time: "",
       owner: "Cladwell",
       ele: "React Web App to help women manage their style and clothing.",
-      desc: "Tasked with creating a interactive web application to educate and enable women to pair down their total amount of clothing, I aided the Cladwell executive team with outlining objectives, guiding UX, and managed project timelines while developing the front-end interface. Since this was a prototype of a new product concept, the code was developed in mind of restructuring and moving components. The development team turned to using React.js with this project first due it\'s modular nature.",
+      desc: `<p>Created to expand Cladwell’s product offering to the needs of women, Capsules focused on a process of self-creating capsule wardrobes and providing education for best practices with purchasing and maintaining.</p>
+      <p>In control of the entire user experience, build an interface that allowed the creation of fully custom capsule wardrobes while providing touch-points for users to navigate to a education section without losing progress.</p>`,
+      highlights: ["Allowed users to manipulate data in order to customize their capsules to fit their everyday needs, automatically saving progress", "Leveraged React’s Virtual DOM in order to only change necessary elements"],
       preview_image: "./src/shared/img/projects/capsules0.png",
       images: [
         {
@@ -38,29 +42,18 @@ export class ProjectsService {
         },
       ],
     },
-    cladwell_macysIdeaLab: {
-      name: "Macy\'s Idea Lab",
-      skills: [],
-      time: "",
-      owner: "Cladwell",
-      ele: "Collaboration with Macys.com and Cladwell to intergrate products.",
-      desc: "I was sent to work with a prototyping team at Macys.com in San Francisco to help them with developing a small web application using Cladwell\'s skillsnology to promote Macy\'s merchandise. Helped onboard the Macys.com team with the specific project objectives and target audience, played a large role in defining the user experience, and facilitated communication between both companies to create an MVP within two weeks. *All designs are property of Macys.com",
-      preview_image: "./src/shared/img/projects/macys0.jpg",
-      images: [
-        {title: "", desc: "", url: null}
-      ],
-    },
     coupsmart_smartDeals: {
       name: "Coupons on Facebook",
       skills: ["PHP", "JQuery", "MySQL", "CSS3"],
       time: "",
-      owner: "Cladwell",
+      owner: "CoupSmart",
       ele: "Digital marketing tool to deliver printable coupons to Facebook Fans.",
-      desc: "Dubbed \"Smart Deals\", this app was created for CoupSmart for their clients to offer coupons and other printed promotional material right on their Facebook page. The app focuses on creating viral deals, encouraging or requiring Facebook users to like the page or share with friends before they are able to print. Currently, the third version of the app has been very popular, with more than 500,000+ active users in 2012.\r\n My role in this app was comprehensive, from wire-framing and creating concepts for the initial idea to the development of the user interface and front-end controls. Also, I lead further refinement and development over the additional iterations.",
+      highlights: ["Over 1 MM page views and 100K+ active users", "Hosted hundreds of coupon campaigns", "Allowed versatility of deliverable content by leveraging JQuery, email, or CoupSmart’s dynamic image generation to deliver any asset the client needed"],
+      desc: `<p>CoupSmart’s flagship product, allows for the distribution of online printable coupons after you “like” or share a promotion with a friend.</p><p>Tasked with creating a very versatile web app that is loaded within Facebook that can be customized to fit any branding without sacrificing usability for the end user. Uses CoupSmart’s API to render and trigger the printing of coupons.</p>`,
       preview_image: "./src/shared/img/projects/smartdeals0.jpg",
       images: [
-        {title: "", desc: "", url: "./src/shared/img/projects/smartdeals1.jpg"},
-        {title: "", desc: "", url: "./src/shared/img/projects/smartdeals2.jpg"}
+        {title: "Layout", desc: "Smart Deals was created to be completely customizable, only providing a basic theme to help promote information heirarchy. Each element could be overwritten with custom styling or, by providing some basic variables, automatically change it's styles to match the client's branding.", url: "./src/shared/img/projects/smartdeals1.jpg"},
+        {title: "Live Promotion", desc: "An example of the app's flexibility and customization. This allowed for clients to only provide the level of work that they wanted for a campaign while keeping the interface friendly and consistant for consumers.", url: "./src/shared/img/projects/smartdeals2.jpg"}
       ],
     },
     coupsmart_actNaturalTour: {
@@ -69,12 +62,12 @@ export class ProjectsService {
       time: "",
       owner: "CoupSmart",
       ele: "Quick creation of assets and ticket distribution of nation-wide concert series.",
-      desc: "Natural Light came to CoupSmart with the need to socially promote their Act Natural Tour, a marketing campaign that had several stops around the country. Using CoupSmart's Mobile and Facebook Coupon Apps, our team came up with the idea to require Fans to share with their friends to see the dates and times of the tour stops. Using assets from a previous advertisement, we created a unique social marketing campaign within 36 hours.\r\n While managing the overall design direction of this campaign, I also modified their logo to create a identity for the tour and created the mobile aspect of this campaign.",
+      desc: `<p>Natural Light was hosting a summer multi-city concert series, and was looking for a technology partner to distribute tickets.</p><p>Leading the CoupSmart design team, full assets were created for the concert within 72 hours from a single magazine advert art file. Not only were the assets used for the CoupSmart applications, but the branding developed was used by Natural Light for all other concert ads.</p>`,
       preview_image: "./src/shared/img/projects/actnatural0.jpg",
       images: [
-        {title: "", desc: "", url: "./src/shared/img/projects/actnatural1.jpg"},
-        {title: "", desc: "", url: "./src/shared/img/projects/actnatural2.jpg"},
-        {title: "", desc: "", url: "./src/shared/img/projects/actnatural3.jpg"}
+        {title: "Mobile Offers", desc: "Mobile-specific web application that ran in conjunction with their Facebook Smart Deal. Mirrored the same functionality to allow mobile users to redeem without being blocked by Facebook's mobile restrictions with apps at the time.", url: "./src/shared/img/projects/actnatural1.jpg"},
+        {title: "Like Gate", desc: "The Smart Deals application incentivied sonsumers to like a client's Facebook Page.", url: "./src/shared/img/projects/actnatural3.jpg"},
+        {title: "Offer Page", desc: "Created multiple asset packages to adjust with Natural Light's shift in objectives. Their promotion was prepared to handle a printable concert ticket, downloadable list of event times and dates, and then finally a chance to win a Facebook Fan Raffle.", url: "./src/shared/img/projects/actnatural2.jpg"}
       ],
     },
     coupsmart_clientProposals: {
@@ -91,9 +84,50 @@ export class ProjectsService {
         {title: "", desc: "", url: "./src/shared/img/projects/clientproposal3.jpg"}
       ],
     },
+    cladwell_Roadmap: {
+      name: "Men’s Wardrobe",
+      skills: ["HTML5", "AngularJS 1", "noSQL", "CSS3"],
+      time: "",
+      owner: "Cladwell",
+      ele: "Men's style and fashion advice app using AngularJS.",
+      desc: `<p>Cladwell’s initial product, providing men with an online management tool for their style and wardrobe. This web application recommends clothing and provides clothing items to purchase, both click-thru and e-commerce solutions.</p><p>Focused on development of the interface, working with the CEO and department heads to create new features. Provided optimizations to performance and user interfaces in order to work best on all devices as well as ongoing maintenance.</p>`,
+      highlights: ["Customized consumer dashboards that would load the latest fashion items as well as aid in searching for specific items", "Mobile optimized layout automatically resized elements based on physical screen size", "Receive and manipulate payload of data from user’s account generation, allowing users to save changes to their wardrobe"],
+      preview_image: "./src/shared/img/projects/roadmap0.jpg",
+      images: [
+        {title: "Dashboard", desc: "The main interface for Cladwell's male user accounts, created to be modular and accept new components as seemlessly as possible to test new business approaches.", url: "./src/shared/img/projects/roadmap2.jpg"},
+        {title: "Wardrobe", desc: "Each season, Cladwell provides men with an updated list of clothing they need to have. The Wardrobe list allows users to click on a item description to check it off their list or to be recommended online products that match their style.", url: "./src/shared/img/projects/roadmap3.jpg"},
+        {title: "Product Recommendations", desc: "Cladwell provides 3 recommendations per wardrobe item, and then multiple pricepoints.", url: "./src/shared/img/projects/roadmap4.jpg"},
+        {title: "Style Analytics", desc: "Mobile-optimized style guide customized to the user's profile. Created the front-end interface with only a desktop reference of the top half of the page within a week.", url: "./src/shared/img/projects/roadmap1.png"}
+      ],
+    },
+    coupsmart_clientPortal: {
+      name: "Client Portal",
+      skills: ["PHP", "JQuery", "MySQL", "CSS3"],
+      time: "",
+      owner: "CoupSmart",
+      ele: "Quick snapshot of users to see the success of their marketing campaigns and take action.",
+      desc: `<p>CoupSmart’s focus was to allow their clients to create their own digital marketing campaigns on Facebook and give them the tools to monitor it’s success.</p><p>Designed and developed a customer portal to help clients see real-time performance of their campaigns and start new ones.</p>`,
+      highlights: ["Utilized the Plot Library to render dynamic graphs to illustrate success metrics","Modular design allows for new features and updates to be easily incorporated into the portal","Mobile optimized to allow the use of any device to see campaign statics"],
+      preview_image: "./src/shared/img/projects/clientportal0.jpg",
+      images: [
+        {title: "", desc: "", url: "./src/shared/img/projects/clientportal1.jpg"},
+        {title: "", desc: "", url: "./src/shared/img/projects/clientportal2.jpg"}
+      ],
+    },
   }
   public hiddenProjects = {
-
+    cladwell_macysIdeaLab: {
+      name: "Macy\'s Idea Lab",
+      skills: [],
+      time: "",
+      owner: "Cladwell",
+      ele: "Collaboration with Macys.com and Cladwell to intergrate products.",
+      desc: "I was sent to work with a prototyping team at Macys.com in San Francisco to help them with developing a small web application using Cladwell\'s skillsnology to promote Macy\'s merchandise. Helped onboard the Macys.com team with the specific project objectives and target audience, played a large role in defining the user experience, and facilitated communication between both companies to create an MVP within two weeks. *All designs are property of Macys.com",
+      preview_image: "./src/shared/img/projects/macys0.jpg",
+      images: [
+        {title: "", desc: "", url: null}
+      ],
+    },
     cladwell_outfits: {
       name: "Outfits Feature Update - Spring 2016",
       skills: [],
@@ -131,6 +165,7 @@ export class ProjectsService {
       owner: "",
       ele: "",
       desc: "",
+      highlights: [],
       preview_image: "./src/shared/img/projects/example0.jpg",
       images: [
         {title: "", desc: "", url: "./src/shared/img/projects/example1.jpg"},
