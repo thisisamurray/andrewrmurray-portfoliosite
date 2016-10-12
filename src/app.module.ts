@@ -14,7 +14,6 @@ import {ProjectsComponent} from './projects/projects.component';
 import {TimelineComponent} from './timeline/timeline.component';
 import {PortfolioComponent} from './portfolio/portfolio.component';
 import {ContactComponent} from './contact/contact.component';
-import {ContactNoFormComponent} from './contact/contact-noform.component';
 
 if (process.env.ENV === 'production') {
   enableProdMode();
@@ -36,8 +35,7 @@ if (process.env.ENV === 'production') {
     TimelineComponent,
     PortfolioComponent,
     ProjectComponent,
-    ContactComponent,
-    ContactNoFormComponent
+    ContactComponent
   ],
   bootstrap: [AppComponent]
 })
