@@ -23,7 +23,7 @@
       display: block;
       text-align: center;
       text-shadow: 1px 1px 0px #000;
-      span.label {
+      span.project-label {
         color: $theme-gray-light;
       }
     }
@@ -32,12 +32,15 @@
     .gallery-container {
       background-color: $theme-black;
       width: 100%;
+      min-height: 300px;
       position: relative;
       padding-bottom: 50px;
       img.gallery-image {
         display: block;
-        max-width: 600px;
+        max-width: 800px;
+        width: 100%;
         margin: 0 auto;
+        padding: 10px;
         position: relative;
         z-index: 1;
       }
@@ -78,6 +81,7 @@
         li {
           border: 3px #fff solid;
           outline: 1px #000 dotted;
+          padding: 5px;
           margin: 10px;
           max-height: 150px;
           overflow-y: hidden;
