@@ -11,22 +11,22 @@ import { ProjectsService } from "../shared/services/projects";
     <div class="project-detail">
       <div class="detail-bar">
         <button class="small-button" (click)="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</button>
-        <h2><span class="label">Project:</span> {{project.name}}</h2>
+        <h3><span class="project-label">Project:</span> {{project.name}}</h3>
       </div>
       <div class="detail-content">
         <p><b>Skills:</b> <span *ngFor="let skill of project.skills; let i = index">{{skill}}<span *ngIf="i !== (project.skills.length - 1)">, </span></span></p>
         <div [innerHTML]="project.desc"></div>
       </div>
       <div class="detail-gallery">
-        <div class="gallery-navigator pure-menu-horizontal">
-          <ul class="navigator-buttons pure-menu-list">
-            <li [class.active]="i === currentImageIndex" *ngFor="let imgButton of project.images; let i = index" (click)="updateMainImage(i)" class="pure-menu-item img-button">
+        <div class="gallery-navigator menu-centered">
+          <ul class="navigator-buttons menu">
+            <li [class.active]="i === currentImageIndex" *ngFor="let imgButton of project.images; let i = index" (click)="updateMainImage(i)" class="img-button">
               <img src="{{imgButton.url}}" alt="{{i + 1}}" />
             </li>
           </ul>
         </div>
         <div class="gallery-container">
-          <button class="swiper left" (click)="swipe(SA.LEFT)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          <button class="swiper left mouseOnly" (click)="swipe(SA.LEFT)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
           <div class="gallery-desc">
             <div class="desc-content">
               <h3>{{project.images[currentImageIndex].title}}</h3>
@@ -34,7 +34,7 @@ import { ProjectsService } from "../shared/services/projects";
             </div>
           </div>
           <img class="gallery-image" src="{{project.images[currentImageIndex].url}}" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)" />
-          <button class="swiper right" (click)="swipe(SA.RIGHT)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+          <button class="swiper right mouseOnly" (click)="swipe(SA.RIGHT)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
         </div>
       </div>
     </div>

@@ -6,15 +6,15 @@ import { User } from "../shared/models/user";
   styleUrls: ['../shared/scss/portfolio.scss'],
   template: `
     <header>
-      <nav class="pure-menu pure-menu-horizontal content">
-        <div class="navbar-logo pure-menu-heading">
+      <nav class="content row">
+        <div class="navbar-logo columns small-12 medium-3">
           <a href="/" class="logo"><img src="./src/shared/img/sitelogo.svg" alt="Andrew R. Murray's Portfolio Site"/></a>
         </div>
-        <ul class="pure-menu-list">
-          <li class="pure-menu-item"><a href="#projects" class="pure-menu-link">Projects</a></li>
-          <li class="pure-menu-item"><a href="#timeline" class="pure-menu-link">Experience</a></li>
-          <li class="pure-menu-item"><a href="#skills" class="pure-menu-link">Skills</a></li>
-          <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
+        <ul class="menu align-right columns small-12 medium-9">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -22,9 +22,9 @@ import { User } from "../shared/models/user";
       <bio></bio>
       <projects id="projects"></projects>
       <timeline id="timeline"></timeline>
-      <div id="skills" class="skills">
+      <div id="skills" class="skills row">
         <h2 class="section-header">Skills</h2>
-        <div class="skill">
+        <div class="skill columns small-12 medium-6">
           <h3>Development &amp; Design</h3>
           <ul>
             <li>
@@ -45,7 +45,7 @@ import { User } from "../shared/models/user";
             </li>
           </ul>
         </div>
-        <div class="skill">
+        <div class="skill columns small-12 medium-6">
           <h3>Product &amp; Process</h3>
           <ul>
             <li>

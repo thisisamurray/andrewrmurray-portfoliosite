@@ -1,4 +1,5 @@
 @import './FA/font-awesome';
+@import './foundation/foundation-min';
 @import 'theme';
 
 html {
@@ -17,4 +18,10 @@ h1, h2, h3 {
     padding: 10px;
     border-bottom: 3px $theme-red solid;
   }
+}
+.no-touchevents .pointer:hover {
+  cursor: pointer;
+}
+.touchevents .mouseOnly {
+  display: none;
 }
