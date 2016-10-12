@@ -11,18 +11,18 @@ import { User } from "../shared/models/user";
           <a href="/" class="logo"><img src="./src/shared/img/sitelogo.svg" alt="Andrew R. Murray's Portfolio Site"/></a>
         </div>
         <ul class="pure-menu-list">
-        // [routerLinkActive]="['active']"
-          <li class="pure-menu-item">Projects</li>
-          <li class="pure-menu-item">Experience</li>
-          <li class="pure-menu-item">Contact</li>
+          <li class="pure-menu-item"><a href="#projects" class="pure-menu-link">Projects</a></li>
+          <li class="pure-menu-item"><a href="#timeline" class="pure-menu-link">Experience</a></li>
+          <li class="pure-menu-item"><a href="#skills" class="pure-menu-link">Skills</a></li>
+          <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
         </ul>
       </nav>
     </header>
     <div>
       <bio></bio>
-      <projects></projects>
-      <timeline></timeline>
-      <div class="skills">
+      <projects id="projects"></projects>
+      <timeline id="timeline"></timeline>
+      <div id="skills" class="skills">
         <h2 class="section-header">Skills</h2>
         <div class="skill">
           <h3>Development &amp; Design</h3>
@@ -45,7 +45,7 @@ import { User } from "../shared/models/user";
             </li>
           </ul>
         </div>
-        <div class="skill pure-u-1-2">
+        <div class="skill">
           <h3>Product &amp; Process</h3>
           <ul>
             <li>
@@ -67,7 +67,7 @@ import { User } from "../shared/models/user";
           </ul>
         </div>
       </div>
-      <contact></contact>
+      <contact id="contact"></contact>
     </div>
     <footer>
       <div class="content">

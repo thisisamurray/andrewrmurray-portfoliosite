@@ -10,9 +10,8 @@ import { TimelineService } from "../shared/services/timeline";
     <div class="events">
       <div *ngFor="let exp of allEvents" class="event">
         <h3>{{exp.name}}</h3>
-        <p>{{exp.position}}</p>
-        <p>{{exp.time}}</p>
-        <p>{{exp.desc}}</p>
+        <p>{{exp.position}} | {{exp.time}}</p>
+        <div [innerHTML]="exp.desc"></div>
       </div>
     </div>
   `

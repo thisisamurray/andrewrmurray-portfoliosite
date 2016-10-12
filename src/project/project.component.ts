@@ -15,7 +15,7 @@ import { ProjectsService } from "../shared/services/projects";
       </div>
       <div class="detail-content">
         <p><b>Skills:</b> <span *ngFor="let skill of project.skills; let i = index">{{skill}}<span *ngIf="i !== (project.skills.length - 1)">, </span></span></p>
-        <p>{{project.desc}}</p>
+        <div [innerHTML]="project.desc"></div>
       </div>
       <div class="detail-gallery">
         <div class="gallery-navigator pure-menu-horizontal">
